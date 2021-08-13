@@ -1,0 +1,9 @@
+<div class="center">
+<h3>Create a new list</h3>
+  <%= simple_form_for @list do |f| %>
+    <%= f.input :name, placeholder: 'list name' %>
+    <%= f.submit class: 'center' %>
+  <% end %>
+  <br>
+  <%= link_to 'back to home',  root_path %>
+</div>

@@ -1,0 +1,23 @@
+<h1><%= @list.name %></h1>
+<br>
+<%= link_to 'back to home',  root_path %>
+<br>
+<span class="movie-tag"><%= pluralize(@list.movies.size, 'movie') %></span>
+<br>
+<%= link_to 'delete this list', list_path(@list), method: :delete, class: 'btn btn-cancel', data: { confirm: 'Are you sure you want to delete this list?' } %>
+<br>
+
+<div class='center'>
+  <%= link_to 'Add a movie', new_list_bookmark_path(@list), class:'center' %>
+</div>
+
+<div class='center'>
+  <% @list.movies.each do |movie| %>
+
+    <h3><%= movie.title %></h3>
+    <a><%= movie.overview %></a>
+    <img src="<%= movie.poster_url %>" alt=" " width="200">
+    <a><%= movie.rating %></a>
+
+  <% end %>
+</div>

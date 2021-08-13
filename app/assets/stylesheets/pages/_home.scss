@@ -53,12 +53,14 @@
   font-size: 26px;
   font-weight: bold;
   margin-bottom: 20px;
+  opacity: 0.9;
 }
 
 .link:hover  {
   align-items: center;
   color: rgb(182, 182, 182);
   text-decoration: none;
+  opacity: 0.7;
 }
 
 .card-category a {
@@ -73,6 +75,7 @@
   align-items: center;
   color: rgb(182, 182, 182);
   text-decoration: none;
+  opacity: 0.8;
 }
 
 .center {
